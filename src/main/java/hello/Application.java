@@ -27,6 +27,8 @@ public class Application {
     public String direction;
     public Boolean wasHit;
     public Integer score;
+    System.out.println("The value x is: " +i);
+    System.out.println("My position x: " + x + ", My position y: "+ y);
   }
 
   static class Arena {
@@ -58,13 +60,6 @@ public class Application {
     System.out.println(arenaUpdate);
     String[] commands = new String[]{"F", "R", "L", "T"};
     int i = new Random().nextInt(4);
-    System.out.println("The value x is: " +i);
-    System.out.println("My position x: " + x + ", My position y: "+ y);
-    System.out.println("Direction: " + direction);
-        for (String keys : state.keySet())
-{
-   System.out.println(keys);
-}
     return commands[i];
   }
 
