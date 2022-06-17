@@ -27,8 +27,6 @@ public class Application {
     public String direction;
     public Boolean wasHit;
     public Integer score;
-    System.out.println("The value x is: " +i);
-    System.out.println("My position x: " + x + ", My position y: "+ y);
   }
 
   static class Arena {
