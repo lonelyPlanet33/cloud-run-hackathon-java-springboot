@@ -41,6 +41,10 @@ public class Application {
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
+    for (String keys : state.keySet())
+{
+   System.out.println(keys);
+}
   }
 
   @InitBinder
@@ -57,8 +61,10 @@ public class Application {
   public String index(@RequestBody ArenaUpdate arenaUpdate) {
     System.out.println(arenaUpdate);
     String[] commands = new String[]{"F", "R", "L", "T"};
-    System.out.println(commands);
     int i = new Random().nextInt(4);
+    System.out.println("The value x is: " +i)
+    System.out.println("My position x: " + x + ", My position y: "+ y);
+    System.out.println("Direction: " + direction);
     return commands[i];
   }
 
