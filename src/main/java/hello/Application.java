@@ -41,10 +41,6 @@ public class Application {
 
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
-    for (String keys : state.keySet())
-{
-   System.out.println(keys);
-}
   }
 
   @InitBinder
@@ -65,6 +61,10 @@ public class Application {
     System.out.println("The value x is: " +i);
     System.out.println("My position x: " + x + ", My position y: "+ y);
     System.out.println("Direction: " + direction);
+        for (String keys : state.keySet())
+{
+   System.out.println(keys);
+}
     return commands[i];
   }
 
